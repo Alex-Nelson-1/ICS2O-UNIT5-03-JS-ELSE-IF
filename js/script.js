@@ -20,17 +20,16 @@ function calculateAgeRating() {
   const age = parseInt(document.getElementById("age").value)
   if (age > 122) {
     document.getElementById("output").innerHTML = "Not possible."
-  }
-  else if (age > 17) {
-    document.getElementById("output").innerHTML = "You can watch R rated movies."
-  }
-  else if (age > 12) {
-    document.getElementById("output").innerHTML = "You can watch PG-13 rated movies."
-  }
-  else if (age < 13) {
-    document.getElementById("output").innerHTML = "You can watch a G rated movies."
-  }
-  else {
+  } else if (age > 17) {
+    document.getElementById("output").innerHTML =
+      "You can watch R rated movies."
+  } else if (age > 12) {
+    document.getElementById("output").innerHTML =
+      "You can watch PG-13 rated movies."
+  } else if (age < 13) {
+    document.getElementById("output").innerHTML =
+      "You can watch a G rated movies."
+  } else {
     document.getElementById("output").innerHTML = "Invalid input"
   }
 }
