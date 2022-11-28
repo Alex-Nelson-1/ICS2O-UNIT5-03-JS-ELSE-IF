@@ -16,6 +16,21 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function calculateAgeRating() {
+  const age = parseInt(document.getElementById("age").value)
+  if (age > 122) {
+    document.getElementById("output").innerHTML = "Not possible."
+  }
+  else if (age > 17) {
+    document.getElementById("output").innerHTML = "You can watch R rated movies."
+  }
+  else if (age > 12) {
+    document.getElementById("output").innerHTML = "You can watch PG-13 rated movies."
+  }
+  else if (age < 13) {
+    document.getElementById("output").innerHTML = "You can watch a G rated movies."
+  }
+  else {
+    document.getElementById("output").innerHTML = "Invalid input"
+  }
 }
