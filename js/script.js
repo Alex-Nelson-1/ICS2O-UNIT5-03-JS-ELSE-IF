@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function takes an age input and determines which kinds of movies the user can watch .
  */
 function calculateAgeRating() {
   const age = parseInt(document.getElementById("age").value)
